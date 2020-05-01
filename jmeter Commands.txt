@@ -1,4 +1,5 @@
 Why to execute non-gui mode ?
+********************************************************************************************************
 -gui  - consumes more resources / memory
 -gui - not recommended for heavy load testing
 -command line - can be integrated with other systems  -Jenkins/CI …
@@ -18,5 +19,6 @@ jmeter -h  - to get help on jmeter commands
 jmeter -?  - to get information on jmeter command options
 
 To Generate HTML report
-
+***********************************************************************************************************
 jmeter -g <log file> -o <path to output folder>
+D:\apache-jmeter-5.2.1\bin>jmeter -g D:\Scripts\Result.jtl -o D:\Scripts\HtmlResult
