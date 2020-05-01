@@ -16,3 +16,7 @@ jmeter -n -t (location of your jmeter test script) -l (location of the result fi
 jmeter -h  - to get help on jmeter commands 
 
 jmeter -?  - to get information on jmeter command options
+
+To Generate HTML report
+
+jmeter -g <log file> -o <path to output folder>
