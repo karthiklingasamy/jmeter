@@ -32,6 +32,8 @@ LG's
    server.rmi.ssl.disable=true
    sample_variables=UNIQUE_NUMBER_0,POIUNIQUE_NUMBER_1,ReqID,var_IMS_sensorid_3
 3. Run the jmeter-server.bat services on all the jmeter machine and ensure the connection object is created
+4. Set the JAVA_HOME C:\Program Files\Java\jdk1.8.0_241
+5. Set the JMETER_HOME C:\Karthik\apache-jmeter-5.2.1\apache-jmeter-5.2.1
 
 Controller
 1. Go to jmeter.property file and include all the LG IP's
