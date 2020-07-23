@@ -28,12 +28,13 @@ Jmeter Distributed Load Test Checklist
 LG's
 
 1. Copy and Past the same jmeter version on all the LG's
-2. Go to user.property file and check the below settings
+2. Set the JAVA_HOME C:\Program Files\Java\jdk1.8.0_241
+3. Set the JMETER_HOME C:\Karthik\apache-jmeter-5.2.1\apache-jmeter-5.2.1
+4. Go to user.property file and check the below settings
    server.rmi.ssl.disable=true
    sample_variables=UNIQUE_NUMBER_0,POIUNIQUE_NUMBER_1,ReqID,var_IMS_sensorid_3
-3. Run the jmeter-server.bat services on all the jmeter machine and ensure the connection object is created
-4. Set the JAVA_HOME C:\Program Files\Java\jdk1.8.0_241
-5. Set the JMETER_HOME C:\Karthik\apache-jmeter-5.2.1\apache-jmeter-5.2.1
+5. Run the jmeter-server.bat services on all the jmeter machine and ensure the connection object is created
+
 
 Controller
 1. Go to jmeter.property file and include all the LG IP's
