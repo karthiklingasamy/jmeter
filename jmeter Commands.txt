@@ -49,4 +49,8 @@ remote_hosts=127.0.0.1,xxx.xxx.xxx.xxx,xxx.xxx.xxx.xxx
 2. Go to jemeter.property and set the below changes to see the LG name or IP in you jtl(Note: No need to enable this setting on LG)
 jmeter.save.saveservice.hostname=true
 
+To run distribution test
+*******************************************************************************************************************************
+jmeter -n -t C:\Karthik\02_Scripts\IMS_BP01.jmx -l C:\Karthik\03_Results\IMS_BP01.jtl -r
+
  
