@@ -22,3 +22,19 @@ To Generate HTML report
 ***********************************************************************************************************
 jmeter -g <log file> -o <path to output folder>
 D:\apache-jmeter-5.2.1\bin>jmeter -g D:\Scripts\Result.jtl -o D:\Scripts\HtmlResult
+
+Jmeter Distributed Load Test Checklist
+*********************************************
+LG's
+
+1. Copy and Past the same jmeter version on all the LG's
+2. Go to user.property file and check the below settings
+   server.rmi.ssl.disable=true
+   sample_variables=UNIQUE_NUMBER_0,POIUNIQUE_NUMBER_1,ReqID,var_IMS_sensorid_3
+3. Run the jmeter-server.bat services on all the jmeter machine and ensure the connection object is created
+
+Controller
+1. Go to jmeter.property file and include all the LG IP's
+remote_hosts=127.0.0.1,xxx.xxx.xxx.xxx,xxx.xxx.xxx.xxx
+
+ 
