@@ -63,4 +63,8 @@ jmeter.save.saveservice.subresults=true
 
 And unselect the Generate parant option in transaction controller
 
+JTL Analyser pyinstaller command
+----------------------------------
+pipenv run pyinstaller --onefile -w  --paths C:/Users/Ibrahim/.virtualenvs/Tkinter-8T4K30-g app.py
+
  
