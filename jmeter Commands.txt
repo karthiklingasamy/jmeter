@@ -53,4 +53,14 @@ To run distribution test
 *******************************************************************************************************************************
 jmeter -n -t C:\Karthik\02_Scripts\IMS_BP01.jmx -l C:\Karthik\03_Results\IMS_BP01.jtl -r
 
+
+Important Settings for JTL Analyser
+-------------------------------------
+
+I already found the solution. In the jmeter.properties file I had to set
+
+jmeter.save.saveservice.subresults=true
+
+And unselect the Generate parant option in transaction controller
+
  
