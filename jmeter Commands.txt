@@ -122,4 +122,17 @@ else{
 	",ThreadNum:"+${__threadNum};
 }
 
+VTS Integration
+---------------------
+To Get Value:
+
+GET:http://${Var_VTS_ServerIP}:4000/data/get_page?rows=0&page=1&_=1519738913776
+JSON Extractor:
+  Name of created variable : VTS_batchID
+  JSON Path Expression: $.rows[0].BIKE_TT_batchID 
+  Match No: 0
+  
+ To Delete Value:
+ GET : http://${Var_VTS_ServerIP}:4000/data/delete_data?colname=BIKE_TT_batchID&rowid=0&_=1519738913776
+
  
