@@ -134,5 +134,15 @@ JSON Extractor:
   
  To Delete Value:
  GET : http://${Var_VTS_ServerIP}:4000/data/delete_data?colname=BIKE_TT_batchID&rowid=0&_=1519738913776
+ 
+ Unique Number Generation
+ ----------------------------
+ String uniquenumber ="POI${__time(hhmmss)}${__threadNum}";
+vars.put("ReqID",uniquenumber);
+
+User.Property
+----------------
+server.rmi.ssl.disable=true
+sample_variables=IncidentType,IncidentID,ReqID
 
  
