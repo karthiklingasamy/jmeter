@@ -145,4 +145,9 @@ User.Property
 server.rmi.ssl.disable=true
 sample_variables=IncidentType,IncidentID,ReqID
 
+
+File Upload
+------------
+Before Recording keep the sample file in bin directrory
+
  
