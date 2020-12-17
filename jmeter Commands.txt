@@ -1,3 +1,5 @@
+https://www.perfmatrix.com/apache-jmeter-tips-and-tricks/
+
 Why to execute non-gui mode ?
 ********************************************************************************************************
 -gui  - consumes more resources / memory
