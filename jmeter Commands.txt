@@ -39,6 +39,9 @@ reportgenerator.property file
 # Indicates whether only controller samples are displayed on graphs that support it.
 jmeter.reportgenerator.exporter.html.show_controllers_only=true
 
+Jmeter Scripting Standard settings
+----------------------------------
+
 Why to execute non-gui mode ?
 ********************************************************************************************************
 -gui  - consumes more resources / memory
