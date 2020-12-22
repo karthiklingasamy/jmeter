@@ -41,6 +41,8 @@ jmeter.reportgenerator.exporter.html.show_controllers_only=true
 
 Jmeter Scripting Standard settings
 ----------------------------------
+1. Select "Start Next Thread Loop" option at thread group
+
 
 Jmeter Execution
 ---------------------
