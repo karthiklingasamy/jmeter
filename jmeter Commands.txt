@@ -42,6 +42,20 @@ jmeter.reportgenerator.exporter.html.show_controllers_only=true
 Jmeter Scripting Standard settings
 ----------------------------------
 
+Jmeter Execution
+---------------------
+Note: Make sure there should not be any space after the ^ symble. Property Syntax ${__P(USER,1)}  ${__P(RAMPUP,1)}  ${__P(ITERATION,1)}
+
+jmeter -n ^
+-t C:\Karthik\02_Scripts\Jmeter_HTTPSERVER_POC.jmx ^
+-l C:\Karthik\03_Results\03_Nov_2020_SmokeTest\TransactionTime.jtl ^
+-JUSER=10 ^
+-JRAMPUP=10 ^
+-JITERATION=10
+
+
+
+
 Why to execute non-gui mode ?
 ********************************************************************************************************
 -gui  - consumes more resources / memory
