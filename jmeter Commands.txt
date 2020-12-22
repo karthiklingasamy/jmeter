@@ -1,15 +1,38 @@
 https://www.perfmatrix.com/apache-jmeter-tips-and-tricks/
 
-jmeter.property file
-------------------------
+01 - Jmeter Installation
+--------------------------
 
-If you want to change anything on jmeter.property file dont chage it directly. Just copy the parameter and past it on user.propery fille (past is on last line) and change 
-the parameter. This will help us to migrate jmeter scripts from one version to another easily
+Install the below plugin
+1. 3 basic Graph
+2. 5 Additional Graph
+3. AutoStop Listener
+4. Console Status Logger
+5. Custom Thread Group
+6. Dummy Sampler
+7. Perfmon
+8. Weighted Swith Controller
+9. JPGC standard set
+10. HTTP Simple Table server
+
+02- Jmeter Configuration
+-----------------------------
+
+jmeter.property file
+Reference Link(Your Udmey Course)
+1.If you want to change anything on jmeter.property file don't chage it directly. Just copy the parameter and past it on user.propery file (past is on last   		       line) and change the parameter. This will help us to migrate jmeter scripts from one version to another easily
+
+ user.property
+ Reference Link (http://samranga.blogspot.com/2017/05/apache-jmeter-provides-2-modes-of.html)
+ 1. summariser.name=summary
+    summariser.interval=30
+    summariser.out=true
+    summariser.log=true
+
 
 reportgenerator.property file
----------------------------------
-To generate onlt transaction controller output in HTML report
 
+1. To generate only transaction controller output in HTML report
 # Indicates whether only controller samples are displayed on graphs that support it.
 jmeter.reportgenerator.exporter.html.show_controllers_only=true
 
