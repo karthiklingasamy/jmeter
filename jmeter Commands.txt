@@ -6,6 +6,13 @@ jmeter.property file
 If you want to change anything on jmeter.property file dont chage it directly. Just copy the parameter and past it on user.propery fille (past is on last line) and change 
 the parameter. This will help us to migrate jmeter scripts from one version to another easily
 
+reportgenerator.property file
+---------------------------------
+To generate onlt transaction controller output in HTML report
+
+# Indicates whether only controller samples are displayed on graphs that support it.
+jmeter.reportgenerator.exporter.html.show_controllers_only=true
+
 Why to execute non-gui mode ?
 ********************************************************************************************************
 -gui  - consumes more resources / memory
