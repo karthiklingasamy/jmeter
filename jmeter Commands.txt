@@ -108,6 +108,7 @@ else{
 	",IterationNum:"+vars.getIteration()+
 	",DateTime:${__time(${__time(dd-MM-YYYY:HH:mm:ss,)},)}"+
 	",ThreadNum:"+${__threadNum})
+	ctx.setRestartNextLoop(true);
 }
 
 Bheanshell Assertion
