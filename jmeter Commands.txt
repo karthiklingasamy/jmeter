@@ -20,7 +20,10 @@ Install the below plugin
 
 jmeter.property file
 Reference Link(Your Udmey Course)
-1.If you want to change anything on jmeter.property file don't chage it directly. Just copy the parameter and past it on user.propery file (past is on last   		       line) and change the parameter. This will help us to migrate jmeter scripts from one version to another easily
+1.If you want to change anything on jmeter.property file don't chage it directly.
+  Just copy the parameter and past it on user.propery file (past is on last line) 
+  and change the parameter. 
+  This will help us to migrate jmeter scripts from one version to another easily
 
  user.property
  Reference Link (http://samranga.blogspot.com/2017/05/apache-jmeter-provides-2-modes-of.html)
