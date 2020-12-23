@@ -84,7 +84,13 @@ Jmeter Scripting Standard settings
 
 Jmeter Execution
 ---------------------
-Note: Make sure there should not be any space after the ^ symble. Property Syntax ${__P(USER,1)}  ${__P(RAMPUP,1)}  ${__P(ITERATION,1)}
+To start test
+jmeter -n -t C:\Karthik\02_Scripts\Jmeter_HTTPSERVER_POC.jmx -l C:\Karthik\03_Results\03_Nov_2020_SmokeTest\RunID01_23_Dec_Load_25Users.jtl 
+To generate html report
+jmeter -g C:\Karthik\03_Results\03_Nov_2020_SmokeTest\RunID01_23_Dec_Load_25Users.jtl -o C:\Karthik\03_Results\03_Nov_2020_SmokeTest\RunID01_23_Dec_Load_25Users
+
+
+Note: The below approach is bit confusing. Need to do some R&D Make sure there should not be any space after the ^ symble. Property Syntax ${__P(USER,1)}  ${__P(RAMPUP,1)}  ${__P(ITERATION,1)}
 
 jmeter -n ^
 -t C:\Karthik\02_Scripts\Jmeter_HTTPSERVER_POC.jmx ^
