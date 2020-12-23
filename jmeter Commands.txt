@@ -101,6 +101,17 @@ jmeter -n ^
 -JRAMPUP=10 ^
 -JITERATION=10
 
+JTLFile settings
+-------------------
+
+JTL Time Stamp Conversion
+https://stackoverflow.com/questions/15164237/how-do-i-convert-a-unix-epoch-timestamp-into-a-human-readable-date-time-in-excel
+
+Note you can drop the /1000 if your epoch time was in seconds rather than milliseconds. To convert to local time, where 't' is your local UTC offset (remember to use a negative value if you have a negative UTC offset), you can add/subtract the UTC offset:
+
+=A2/86400/1000+DATEVALUE("1-1-1970")+t/24
+=A2/86400/1000+DATEVALUE("1-1-1970")+8/24
+
 
 
 
