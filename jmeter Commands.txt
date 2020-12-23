@@ -3,7 +3,8 @@ https://www.perfmatrix.com/apache-jmeter-tips-and-tricks/
 01 - Jmeter Installation
 --------------------------
 
-Install the below plugin
+Install plugin manager first and install the plugins
+
 1. 3 basic Graph
 2. 5 Additional Graph
 3. AutoStop Listener
