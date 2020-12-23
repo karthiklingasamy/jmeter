@@ -80,6 +80,8 @@ Jmeter Scripting Standard settings
 		",ThreadNum:"+${__threadNum})
 		ctx.setRestartNextLoop(true);
 	}
+	
+   3. Add "Result Status Action Handler" and select "Start Next Thread Loop" after the JSR223 Assertion
 
 
 Jmeter Execution
