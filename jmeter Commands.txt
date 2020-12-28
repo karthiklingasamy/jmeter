@@ -65,6 +65,10 @@ reportgenerator.property file (or ) copy and past it on user.property it works
 # Indicates whether only controller samples are displayed on graphs that support it.
 jmeter.reportgenerator.exporter.html.show_controllers_only=true
 
+generate HTML report with seconds instead of millsecond
+--------------------------------------------------------
+https://www.perfmatrix.com/how-to-change-jmeter-html-reports-response-time-values-in-second/
+
 jmeterRecording
 -----------------
 
