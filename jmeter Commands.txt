@@ -57,6 +57,15 @@ Set a natural number as a value of “undo.history.size” attribute e.g. 1, 5, 
 Save the file “jmeter.properties” and relaunch JMeter to reflect the changes.
 
 
+Goto to “bin” folder of JMeter and open “user.properties” file using Notepad or Notepad++. Then go to the section “Reporting configuration” in the file. Make the changes as mentioned below:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Modified values are:
+jmeter.reportgenerator.overall_granularity=1000
+jmeter.reportgenerator.apdex_satisfied_threshold=500
+jmeter.reportgenerator.apdex_tolerated_threshold=1500
+jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Select_Any_Animal|03_Select_A_Type|04_Select_A_Sub_Type|05_Clicking_AddToCart|Dashboard_Report_Generation)(-success|-failure)?$
+
+
 
 reportgenerator.property file (or ) copy and past it on user.property it works
 -------------------------------------------------------------------------------
@@ -68,6 +77,9 @@ jmeter.reportgenerator.exporter.html.show_controllers_only=true
 generate HTML report with seconds instead of millsecond
 --------------------------------------------------------
 https://www.perfmatrix.com/how-to-change-jmeter-html-reports-response-time-values-in-second/
+
+
+
 
 jmeterRecording
 -----------------
