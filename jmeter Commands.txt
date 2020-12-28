@@ -213,6 +213,14 @@ Jmeter Scripting Standard settings
       Add "Flow Controll Action"  and select "Start Next Thread Loop" after the JSR223 Assertion
       
    4. Once the recording is completed then perform “Apply Naming Policy” action to all the samplers inside each Transaction Controllers
+   
+   5. Remember:
+      --------------
+      1.If you select the option “Generate parent sample” in Transaction Controller and run the test in Non-GUI mode then you will not see the Test Summary. Test will execute,          but Test Summary will not generate.
+      2. Furthermore, the CSV (or JTL) file will be having some missing information on some samplers and some Graphs/Tables will be empty or will not have enough details in the          HTML Report, examples:
+      a. Top Errors
+      b. Top Errors by Samplers
+      c. Response code over time
       
       
 VTS Integration
