@@ -67,6 +67,18 @@ jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Selec
 
 Note:
   The easiest way to get the Transaction Controller names from Test Plan is JMeter Menu -> Tools -> Export transactions for report.
+  
+Optional changes:
+----------------------
+In addition, you can modify a few more properties of “user.properties” file under “Reporting configuration” as per your requirement but they are optional:
+
+To show an appropriate name of JMeter HTML Dashboard Report, update the value of below property:
+
+jmeter.reportgenerator.report_title=JPetStore JMeter Dashboard Report
+
+To change the time format of “Start Time” and “End Time” in Report update the value of below property:
+
+jmeter.save.saveservice.timestamp_format= dd-MM-yyyy HH:mm:ss
 
 
 
