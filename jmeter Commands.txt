@@ -60,10 +60,10 @@ Save the file “jmeter.properties” and relaunch JMeter to reflect the changes
 Goto to “bin” folder of JMeter and open “user.properties” file using Notepad or Notepad++. Then go to the section “Reporting configuration” in the file. Make the changes as mentioned below:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Modified values are:
-jmeter.reportgenerator.overall_granularity=1000
+jmeter.reportgenerator.overall_granularity=1000 (Refer reportgenerator.property file if jmeter 5.4 and above)
 jmeter.reportgenerator.apdex_satisfied_threshold=500
 jmeter.reportgenerator.apdex_tolerated_threshold=1500
-jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Select_Any_Animal|03_Select_A_Type|04_Select_A_Sub_Type|05_Clicking_AddToCart|Dashboard_Report_Generation)(-success|-failure)?$
+jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Select_Any_Animal|03_Select_A_Type|04_Select_A_Sub_Type|05_Clicking_AddToCart|Dashboard_Report_Generation)(-success|-failure)?$     (Refer reportgenerator.property file if jmeter 5.4 and above)
 
 
 
