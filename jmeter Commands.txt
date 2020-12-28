@@ -58,6 +58,9 @@ Jmeter Scripting Standard settings
 1. Select "Start Next Thread Loop" option at thread group
 
 2. Implement Text Check usinh JSR223 Assertion
+   
+   Method 1: without TPS logic
+   ------------------------------
 
    String textCheck=vars.get("var_message");
 
@@ -80,6 +83,54 @@ Jmeter Scripting Standard settings
 		",DateTime:${__time(${__time(dd-MM-YYYY:HH:mm:ss,)},)}"+
 		",ThreadNum:"+${__threadNum})
 		ctx.setRestartNextLoop(true);
+	}
+	
+	Method 2: With TPS logic
+	---------------------------------
+	
+	String textCheck=vars.get("var_message")
+
+	def time=0
+	time=prev.getTime()
+	pacing=1000
+	d_pacing=pacing-time
+
+	log.info("Response Time is:"+time.toString())
+	log.info("d_pacing Time is:"+d_pacing.toString())
+
+	if (d_pacing>0)
+	{
+		log.info("Fiest if")
+		vars.put("temp_pacing",d_pacing.toString())
+	}
+
+	if (d_pacing<0)
+	{    log.info("2nd if")
+		vars.put("temp_pacing","0")
+		log.info("temp_pacing is:"+vars.get("temp_pacing"))
+	}
+
+
+	if (textCheck=="Message sent successfully")
+	{
+		AssertionResult.setFailure(false);  
+		log.info("TextCheck:Pass,ThreadGroup:"+
+		ctx.getThreadGroup().getName()+
+		",UserName:"+vars.get("UserName")+
+		",IterationNum:"+vars.getIteration()+
+		",DateTime:${__time(${__time(dd-MM-YYYY:HH:mm:ss,)},)}"+
+		",ThreadNum:"+${__threadNum})
+	}
+	else{
+		AssertionResult.setFailure(true);  
+		log.info("TextCheck:Fail,ThreadGroup:"+
+		ctx.getThreadGroup().getName()+
+		",UserName:"+vars.get("UserName")+
+		",IterationNum:"+vars.getIteration()+
+		",DateTime:${__time(${__time(dd-MM-YYYY:HH:mm:ss,)},)}"+
+		",ThreadNum:"+${__threadNum})
+
+
 	}
 	
    3. Add "Result Status Action Handler" and select "Start Next Thread Loop" after the JSR223 Assertion
