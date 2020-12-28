@@ -65,6 +65,9 @@ jmeter.reportgenerator.apdex_satisfied_threshold=500
 jmeter.reportgenerator.apdex_tolerated_threshold=1500
 jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Select_Any_Animal|03_Select_A_Type|04_Select_A_Sub_Type|05_Clicking_AddToCart|Dashboard_Report_Generation)(-success|-failure)?$     (Refer reportgenerator.property file if jmeter 5.4 and above)
 
+Note:
+  The easiest way to get the Transaction Controller names from Test Plan is JMeter Menu -> Tools -> Export transactions for report.
+
 
 
 reportgenerator.property file (or ) copy and past it on user.property it works
