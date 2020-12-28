@@ -47,7 +47,8 @@ Save the file “jmeter.properties” and relaunch JMeter to reflect the changes
 
 
 
-reportgenerator.property file
+reportgenerator.property file (or ) copy and past it on user.property it works
+-------------------------------------------------------------------------------
 
 1. To generate only transaction controller output in HTML report
 # Indicates whether only controller samples are displayed on graphs that support it.
