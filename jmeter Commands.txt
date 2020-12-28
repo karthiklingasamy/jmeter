@@ -200,6 +200,8 @@ Jmeter Scripting Standard settings
                                    (OR)
       Add "Flow Controll Action"  and select "Start Next Thread Loop" after the JSR223 Assertion
       
+   4. Once the recording is completed then perform “Apply Naming Policy” action to all the samplers inside each Transaction Controllers
+      
       
 VTS Integration
 ---------------------
