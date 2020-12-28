@@ -85,6 +85,31 @@ Custome code
       log.info("Response Time is:"+time.toString())  //To print def variables
       log.info("temp_pacing is:"+vars.get("temp_pacing")) //To print vars.put variables
 
+4. https://jmeter-plugins.org/wiki/Functions/
+   Note: 
+   chooseRandom
+   ${__chooseRandom(red,green,blue,orange,violet,magenta,randomColor)}
+   doubleSum
+   ${__doubleSum(3.5, 4.7, sumVariable)}
+   env
+   ${__env(ENV_VAR, someVariable, defaultValue)}
+   isDefined
+   ${__isDefined(testVar)}
+   MD5
+   ${__MD5(test)}
+   base64Encode
+   ${__base64Encode(test string)}
+   base64Decode
+   ${__base64Decode(dGVzdCBzdHJpbmc=)}
+   strLen
+   ${__strLen(test string, lenVariable)}
+   substring
+   ${__substring(test string, 5, 8)}
+   strReplace
+   ${__strReplace(banana apple orange,apple,dog)}
+   if
+   ${__if(${size}, 5, ok, invalid)}
+
 
 
 Jmeter Scripting Standard settings
