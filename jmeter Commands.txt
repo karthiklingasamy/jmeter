@@ -51,6 +51,15 @@ File Upload :
 
 if it is file upload script make sure the file needs to be placed in bin directory before recording
 
+Custome code
+---------------
+1. Note if you write custome code on JSR223 Assersion user vars.get and vars.put function to store values to access on jmeter elements 
+(example :Flow Action contron, HTTP Request)
+2. Normal groovy variables are stote as it is "def"
+3. log the output message
+      log.info("Response Time is:"+time.toString())  //To print def variables
+      log.info("temp_pacing is:"+vars.get("temp_pacing")) //To print vars.put variables
+
 
 
 Jmeter Scripting Standard settings
