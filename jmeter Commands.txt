@@ -55,7 +55,7 @@ if it is file upload script make sure the file needs to be placed in bin directo
 
 Jmeter Scripting Standard settings
 ----------------------------------
-1. Select "Start Next Thread Loop" option at thread group
+1. Select "Continue" option at thread group
 
 2. Implement Text Check usinh JSR223 Assertion
    
@@ -134,6 +134,8 @@ Jmeter Scripting Standard settings
 	}
 	
    3. Add "Result Status Action Handler" and select "Start Next Thread Loop" after the JSR223 Assertion
+                                   (OR)
+      Add "Flow Controll Action"  and select "Start Next Thread Loop" after the JSR223 Assertion
 
 
 Jmeter Execution
