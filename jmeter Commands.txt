@@ -32,6 +32,19 @@ Reference Link(Your Udmey Course)
     summariser.interval=30
     summariser.out=true
     summariser.log=true
+    
+  jmeter.properties
+-------------------------
+
+Follow the below steps to enable undo and redo options:
+
+Navigate to “bin” folder of JMeter directory
+Open “jmeter.properties” file using Notepad or Notepad++
+Search for “undo.history.size”
+Uncomment the line “undo.history.size=0” by removing # (sharp sign)
+Set a natural number as a value of “undo.history.size” attribute e.g. 1, 5, 10, 50 etc. (This number represents the maximum number of steps that you can undo or redo.)
+Save the file “jmeter.properties” and relaunch JMeter to reflect the changes.
+
 
 
 reportgenerator.property file
@@ -145,6 +158,20 @@ Jmeter Scripting Standard settings
    3. Add "Result Status Action Handler" and select "Start Next Thread Loop" after the JSR223 Assertion
                                    (OR)
       Add "Flow Controll Action"  and select "Start Next Thread Loop" after the JSR223 Assertion
+      
+      
+VTS Integration
+---------------------
+To Get Value:
+
+GET:http://${Var_VTS_ServerIP}:4000/data/get_page?rows=0&page=1&_=1519738913776
+JSON Extractor:
+  Name of created variable : VTS_batchID
+  JSON Path Expression: $.rows[0].BIKE_TT_batchID 
+  Match No: 0
+  
+ To Delete Value:
+ GET : http://${Var_VTS_ServerIP}:4000/data/delete_data?colname=BIKE_TT_batchID&rowid=0&_=1519738913776
 
 
 Jmeter Execution
@@ -282,18 +309,7 @@ else{
 	",ThreadNum:"+${__threadNum};
 }
 
-VTS Integration
----------------------
-To Get Value:
 
-GET:http://${Var_VTS_ServerIP}:4000/data/get_page?rows=0&page=1&_=1519738913776
-JSON Extractor:
-  Name of created variable : VTS_batchID
-  JSON Path Expression: $.rows[0].BIKE_TT_batchID 
-  Match No: 0
-  
- To Delete Value:
- GET : http://${Var_VTS_ServerIP}:4000/data/delete_data?colname=BIKE_TT_batchID&rowid=0&_=1519738913776
  
  Unique Number Generation
  ----------------------------
@@ -305,21 +321,8 @@ User.Property
 server.rmi.ssl.disable=true
 sample_variables=IncidentType,IncidentID,ReqID
 
-jmeter.properties
--------------------------
-
-Follow the below steps to enable undo and redo options:
-
-Navigate to “bin” folder of JMeter directory
-Open “jmeter.properties” file using Notepad or Notepad++
-Search for “undo.history.size”
-Uncomment the line “undo.history.size=0” by removing # (sharp sign)
-Set a natural number as a value of “undo.history.size” attribute e.g. 1, 5, 10, 50 etc. (This number represents the maximum number of steps that you can undo or redo.)
-Save the file “jmeter.properties” and relaunch JMeter to reflect the changes.
 
 
-File Upload
-------------
-Before Recording keep the sample file in bin directrory
+
 
  
