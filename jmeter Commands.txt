@@ -93,7 +93,14 @@ generate HTML report with seconds instead of millsecond
 --------------------------------------------------------
 https://www.perfmatrix.com/how-to-change-jmeter-html-reports-response-time-values-in-second/
 
+Jmeter Tuning (Source from udmey course video:Jmeter Tuning also refer https://jmeter.apache.org/usermanual/get-started.html )
+----------------------------------------------------------
+There are a few environment variables, that can be used to customize the JVM settings for JMeter. An easy way to set those is by creating a file named setenv.bat in the bin directory. Such a file could look like:
 
+rem This is the content of bin\setenv.bat,
+rem it will be called by bin\jmeter.bat
+
+set JVM_ARGS=-Xms1G -Xmx1G -Dpropname=value
 
 
 jmeterRecording
