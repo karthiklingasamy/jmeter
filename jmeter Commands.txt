@@ -123,7 +123,7 @@ select jmeter from both read and write section, give the token name and click on
 >Step 7:
 Add Backend Listener and enter the below details
 1. Backend Listener implementation: influcdbBackendListenerClient
-2. InfluxURL:http://localhost:9002/api/v2/write?org=karthik&db=jmeter
+2. InfluxURL:http://localhost:9002/api/v2/write?org=karthik&bucket=jmeter
    Note: If you used latest jmeter 5.4 you need to include the organisation name(org)
 3. application:demo
 4. Test Title:Demo
