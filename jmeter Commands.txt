@@ -102,6 +102,40 @@ rem it will be called by bin\jmeter.bat
 
 set JVM_ARGS=-Xms1G -Xmx1G -Dpropname=value
 
+Jmeter Influxdb and Grafana integration
+-------------------------------------------
+Step 1:
+> docker run -d --name=influxdb -p 9002:8086 quay.io/influxdb/influxdb:v2.0.3
+Step 2:
+> open browser and type url http://localhost:9002/
+Step 3:
+Fill the form
+User Name:xxxxx
+Password:xxxx
+Organisaction Name:xxxx
+Bucket Name:jmeter
+>Step 4:
+Click on quick start
+> Step 5:
+Click on Data and clicl on "Generate"-->Read/Write Token
+>Step 6:
+select jmeter from both read and write section, give the token name and click on save
+>Step 7:
+Add Backend Listener and enter the below details
+1. Backend Listener implementation: influcdbBackendListenerClient
+2. InfluxURL:http://localhost:9002/api/v2/write?org=karthikdb=jmeter
+   Note: If you used latest jmeter 5.4 you need to include the organisation name(org)
+3. application:demo
+4. Test Title:Demo
+5. click on Add button at the bottom of the backend listener element and add the influx token. It is necessary to read/write data on influxdb
+   
+   infiuxdbToken:_KWcFnjs0_ZqzjKq2J0vpsh0i7biSactj09fmbVbPmYFiRY6zABET-ZyLfDm1gjHLrhKT4iwcF93BvbOtFbIug==
+   Note: 
+     1. Copy the token from influxdb. 
+     2. The name "infiuxdbToken" is case sensetive pls give the name as it is
+   
+
+
 
 jmeterRecording
 -----------------
