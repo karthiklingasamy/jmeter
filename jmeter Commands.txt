@@ -133,7 +133,35 @@ Add Backend Listener and enter the below details
    Note: 
      1. Copy the token from influxdb. 
      2. The name "influxdbToken" is case sensetive pls give the name as it is
-   
+     
+ Setup Grafana
+ ---------------------
+
+docker run -d --name=grafana -p 5000:3000 grafana/grafana
+
+http://localhost:5000/login
+Enter defail userid/password
+admin
+admin
+
+After you enter default userid/password it will ask you to change the password
+
+Integrate Grafana with Influx database
+
+Go to settings -> datasources  -->Add data source --->select influxdb--->
+Name:influxdb
+Query Language:Flux (If the version is 2 and above)
+
+Enter Connectio Details:
+URL:http://172.17.0.2:8086 (This ip is influx contailer)
+Organization:karthik
+Token:
+Default Bucket: jmeter
+
+Note: docker command to get container ip
+> docker ps
+> docker container inspect b154
+ 
 
 
 
