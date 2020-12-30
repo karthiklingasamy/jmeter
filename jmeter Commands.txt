@@ -1,4 +1,5 @@
 https://www.perfmatrix.com/apache-jmeter-tips-and-tricks/
+http://www.perftuned.com/  (to plot graph using R program)
 
 01 - Jmeter Installation
 --------------------------
