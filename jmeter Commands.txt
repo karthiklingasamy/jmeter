@@ -350,6 +350,18 @@ Note you can drop the /1000 if your epoch time was in seconds rather than millis
 =A2/86400/1000+DATEVALUE("1-1-1970")+t/24
 =A2/86400/1000+DATEVALUE("1-1-1970")+8/24
 
+windows commands
+-----------------
+Count the number of lines in a file.
+
+type C:\Karthik\03_Results\Scenario_LoadTest_12_API_15min_Loadtest.jtl| find "" /v /c
+
+If you want the number and the file info, use this command:
+find /v /c “” C:\Karthik\03_Results\*.jtl
+
+To get the Transaction Controller name and store it on output file
+
+find "BP02_eIACSTransactionTime," C:\Karthik\03_Results\Scenario_LoadTest_12_API_15min_Loadtest.jtl >>out.txt
 
 
 
