@@ -169,6 +169,18 @@ Note: docker command to get container ip
 jmeterRecording
 -----------------
 
+1. Set up the proxy settings on browser. Use same port number in jmeter and browser
+2. Select Target controller as "recording controller". 
+3. Its 5th optin in Test Plan Creation >>Grouping
+     Select "Put each group in new transaction controller".
+4. Select the checkbox Captured the HTTP header
+5. Select the checkbox Regex Matching
+6. Select "Prefix" from the dropdown fron HTTP Sample settings
+7. Recording default encoding
+   >>Select "All embeded element"
+8. Any other check mark enable by default just let it be
+
+
 To filrer unwanted request :
 
 .*(activity.windows.com|content-autofill.googleapis.com|beacons.gcp.gvt2.com|www.google.com|accounts.google.com|safebrowsing.googleapis.com|icon.internal.local/es/heatmap/_search?size=0).*
