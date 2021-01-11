@@ -8,6 +8,7 @@ http://www.perftuned.com/  (to plot graph using R program)
    >Download the ‘plugins-manager.jar’ file from this link.
    >Place the jar file in /lib/ext folder of Apache JMeter.
    >Example: C:\apache-jmeter-5.4\lib\ext
+   >Restart jmeter
    >Open JMeter in GUI mode by clicking /bin/jmeter.bat
    >Go to Options -> Plugins Manager
    >You can see three tabs
@@ -27,6 +28,10 @@ Install plugin manager first and install the plugins
 8. Weighted Swith Controller
 9. JPGC standard set
 10. HTTP Simple Table server
+11. Parallel Controller & Sampler
+12. Custom Jmeter Function
+13. Inter Thread Communication
+
 
 02- Jmeter Configuration
 -----------------------------
