@@ -92,22 +92,19 @@ In addition, you can modify a few more properties of “user.properties” file 
 4. To enable undo history 
 > undo.history.size=5
 
-5. To display HTML report Title
-> jmeter.reportgenerator.report_title=Jpet Store
-
-6. To save maximum five backup 
+5. To save maximum five backup 
 > jmeter.gui.action.save.keep_backup_max_count=5
 
-7. To change the backup folder. Notealways use forward slash
+6. To change the backup folder. Notealways use forward slash
 > jmeter.gui.action.save.backup_directory=C:/Karthik/02_Scripts/BackupScripts
 
-8. To increase the default 500 lines in view rwsult tree to infinity
+7. To increase the default 500 lines in view rwsult tree to infinity
 > view.results.tree.max_results=0
 
-9. To increase the response data size saved on response body and heade
+8. To increase the response data size saved on response body and heade
 > view.results.tree.max_size=0
 
-10. To increase the certificate validaty from default 7  to 365
+9. To increase the certificate validaty from default 7  to 365
 > proxy.cert.validity=365
 
 
