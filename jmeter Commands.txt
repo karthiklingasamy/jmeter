@@ -74,17 +74,43 @@ jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Selec
 Note:
   The easiest way to get the Transaction Controller names from Test Plan is JMeter Menu -> Tools -> Export transactions for report.
   
-Optional changes:
+User.Property BBL Change:
 ----------------------
 In addition, you can modify a few more properties of “user.properties” file under “Reporting configuration” as per your requirement but they are optional:
 
-To show an appropriate name of JMeter HTML Dashboard Report, update the value of below property:
+1. To show an appropriate name of JMeter HTML Dashboard Report, update the value of below property:
 
-jmeter.reportgenerator.report_title=JPetStore JMeter Dashboard Report
+ >jmeter.reportgenerator.report_title=JPetStore JMeter Dashboard Report
 
-To change the time format of “Start Time” and “End Time” in Report update the value of below property:
+2. To change the time format of “Start Time” and “End Time” in Report update the value of below property:
 
-jmeter.save.saveservice.timestamp_format= dd-MM-yyyy HH:mm:ss
+>jmeter.save.saveservice.timestamp_format= dd-MM-yyyy HH:mm:ss
+
+3. To get only transaction controller details in HTML report
+> jmeter.reportgenerator.exporter.html.show_controllers_only=true
+
+4. To enable undo history 
+> undo.history.size=5
+
+5. To display HTML report Title
+> jmeter.reportgenerator.report_title=Jpet Store
+
+6. To save maximum five backup 
+> jmeter.gui.action.save.keep_backup_max_count=5
+
+7. To change the backup folder. Notealways use forward slash
+> jmeter.gui.action.save.backup_directory=C:/Karthik/02_Scripts/BackupScripts
+
+8. To increase the default 500 lines in view rwsult tree to infinity
+> view.results.tree.max_results=0
+
+9. To increase the response data size saved on response body and heade
+> view.results.tree.max_size=0
+
+10. To increase the certificate validaty from default 7  to 365
+> proxy.cert.validity=365
+
+
 
 
 
