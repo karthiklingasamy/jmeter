@@ -107,6 +107,12 @@ In addition, you can modify a few more properties of “user.properties” file 
 9. To increase the certificate validaty from default 7  to 365
 > proxy.cert.validity=365
 
+10. Generate Constant Tink time
+think_time_creator.default_constant_pause=${ConstantDelay}
+think_time_creator.default_range=${RandomDelay}
+
+Note: create the above two variable in user defined variable and set the values.
+
 
 
 
