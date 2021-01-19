@@ -50,22 +50,7 @@ Reference Link(Your Udmey Course)
     summariser.out=true
     summariser.log=true
     
-  jmeter.properties
--------------------------
-
-Follow the below steps to enable undo and redo options:
-
-Navigate to “bin” folder of JMeter directory
-Open “jmeter.properties” file using Notepad or Notepad++
-Search for “undo.history.size”
-Uncomment the line “undo.history.size=0” by removing # (sharp sign)
-Set a natural number as a value of “undo.history.size” attribute e.g. 1, 5, 10, 50 etc. (This number represents the maximum number of steps that you can undo or redo.)
-Save the file “jmeter.properties” and relaunch JMeter to reflect the changes.
-
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+ 
   
 User.Property BBL Change:
 ----------------------
@@ -117,7 +102,15 @@ jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Selec
 Note:
   The easiest way to get the Transaction Controller names from Test Plan is JMeter Menu -> Tools -> Export transactions for report.
 
+jmeter.bat
+------------------------------------------------------------------------------------------
+1. Increase the JAVA Heap Size. The default size is 1 GB. Assuming you have 32 GB RAM. This need to be set 16GB to avoid memory issue during load test
 
+Option 1:
+>set HEAP=-Xms16g -Xmx16g -XX:MaxMetaspaceSize=256m
+
+Option 2:
+>set HEAP=-Xms4g -Xmx16g -XX:MaxMetaspaceSize=256m
 
 
 
