@@ -117,9 +117,15 @@ Option 2:
 reportgenerator.property file (or ) copy and past it on user.property it works
 -------------------------------------------------------------------------------
 
-1. To generate only transaction controller output in HTML report
+1. Option 1:
+To generate only transaction controller output in HTML report
 # Indicates whether only controller samples are displayed on graphs that support it.
 jmeter.reportgenerator.exporter.html.show_controllers_only=true
+
+Note: But this method has limitation. It will not generate TPS graph.
+
+2. Option 2:
+  
 
 generate HTML report with seconds instead of millsecond
 --------------------------------------------------------
