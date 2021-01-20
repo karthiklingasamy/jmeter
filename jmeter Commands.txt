@@ -104,6 +104,9 @@ Note:
   
 12. How to handle the embeded resource failure>
     >httpsampler.ignore_failed_embedded_resources=true
+    
+13. Rename embeded resource name if you apply naming policy
+ >subresults.disable_renaming=true
 
 jmeter.bat
 ------------------------------------------------------------------------------------------
