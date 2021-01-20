@@ -101,6 +101,9 @@ jmeter.reportgenerator.exporter.html.series_filter=^(01_Launch_HomePage|02_Selec
 
 Note:
   The easiest way to get the Transaction Controller names from Test Plan is JMeter Menu -> Tools -> Export transactions for report.
+  
+12. How to handle the embeded resource failure>
+    >httpsampler.ignore_failed_embedded_resources=true
 
 jmeter.bat
 ------------------------------------------------------------------------------------------
