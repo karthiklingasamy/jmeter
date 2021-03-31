@@ -541,5 +541,24 @@ sample_variables=IncidentType,IncidentID,ReqID
 
 
 
+###########################Karthik Update############################################
+jmeter.reportgenerator.exporter.html.show_controllers_only=true
+undo.history.size=5
+jmeter.reportgenerator.report_title=ICON2
+jmeter.gui.action.save.keep_backup_max_count=5
+view.results.tree.max_results=0
+view.results.tree.max_size=0
+proxy.cert.validity=365
+#jmeter.gui.action.save.backup_directory=
+#jmeter.save.saveservice.timestamp_format= dd-MM-yyyy HH:mm:ss
+think_time_creator.default_constant_pause=${ConstantDelay}
+think_time_creator.default_range=${RandomDelay}
+httpsampler.ignore_failed_embedded_resources=true
+subresults.disable_renaming=true
+sample_variables=ThreadID,IncidentType,CheckPoint,IncidentID,CASSReqID,VOIPltNo
+
+
+
+
 
  
